@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currency Converter</title>
     <link rel="stylesheet" href="./styles.css">
+
+    <!-- to get library of font-awesome cdn.js  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="container">
-        <h2> Currency Converter </h2>
+        <h1> Currency Converter </h1>
         <form>
 
-            <div class="amount"git>
+            <div class="amount">
                 <p> Enter the value </p>
                 <input value="100" type="text"/>
             </div>
@@ -19,13 +22,32 @@
             <div class="dropdown">
                 <div class="from">
                     <p>From</p>
-                    <select
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/US/flat/64.png">
+                        <select name="from">
+                        </select>       
+                    </div>
+                </div>
+
+                <!-- exchange icon from font-awesome -->
+                <i class="fa-solid fa-right-left"></i>
+
+                <div class="to">
+                    <p>To</p>
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/IN/flat/64.png">
+                        <select name="to">
+                        </select>       
+                    </div>
                 </div>
             </div>
-
         </form>
+        
+        <div class="msg"> 1 $ = 80 INR</div>
+        <button> Get Result </button>
 
     </div>
+    <script src="./codes.js"></script>
     <script src="./js.js"></script>
 </body>
 </html>
